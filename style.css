@@ -1,26 +1,102 @@
+html{
+    scroll-behavior: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
+    padding-left: none;
+    padding: 0px;
+}
+
 .navbar{
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
-    padding: 10px;
-    margin-bottom: 10px;
-    position: sticky;
+    padding-top: 1vh;
+    position: fixed;
+    top: 0;
+    padding-bottom: 1vh;
 }
 
 .nav-items{
     display: flex;
-    background-color: red;
     width: 40vw;
     height: 5vh;
 }
 
 .nav-item{
     padding-left: 5vw;
-    padding-top: 2vh;
+    padding-top: 1vh;
 }
 
 .nav-item a{
     text-decoration: none;
     color: black;
+    font-weight: bold;
+}
+
+.nav-item a:hover{
+    color: #688eff;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-item a.active{
+    color: #688eff;
+}
+
+.logo{
+    height: 5vh;
+    width: 10vw;
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img{
+    width: 2.5vw;
+    height: 5vh;
+}
+
+.logo-text{
+    font-weight: bold;
+    padding-top: 1vh;
+    width: 10vw;
+    height: 5vh;
+    padding-left: 1vw;
+}
+
+.contents-cover{
+    height: 100vh;
+}
+
+.nav-buffer{
+    height: 7vh;
+}
+
+.contents{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 93vh;
+}
+
+.main{
+    height: 93vh;
+    background-color: green;
+}
+
+.projects{
+    height: 93vh;
+    background-color: red;
+}
+
+.skills{
+    height: 93vh;
+    background-color: blue;
+}
+
+.contact{
+    height: 93vh;
+    background-color: yellow;
 }
