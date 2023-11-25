@@ -38,12 +38,12 @@ body{
 }
 
 .nav-item a:hover{
-    color: #688eff;
+    color: #30C2EC;
     transition: color 0.2s ease-in-out;
 }
 
 .nav-item a.active{
-    color: #688eff;
+    color: #30C2EC;
 }
 
 .logo{
@@ -131,7 +131,7 @@ body{
     height: 50px;
     font-size: 30px;
     font-weight: bold;
-    color: #688eff;
+    color: #30C2EC;
     display: flex;
     align-items: center;
 }
@@ -144,14 +144,14 @@ body{
 .m-contact-btn{
     border: none;
     background-color: #ffffff;
-    border: 2px solid #688eff;
+    border: 2px solid #30C2EC;
     width: 10vw;
     height: 5vh;
     border-radius: 2vh;
 }
 
 .m-contact-btn:hover{
-    background-color: #688eff;
+    background-color: #30C2EC;
     color: #ffffff;
     transition: background-color 0.2s ease-in-out;
 }
@@ -194,7 +194,7 @@ body{
 }
 
 .p-container{
-    background-color: #688eff;
+    background-color: #30C2EC;
     height: 83vh;
     display: flex;
     justify-content: space-between;
@@ -244,14 +244,14 @@ body{
 .p-visit{
     border: none;
     background-color: #ffffff;
-    border: 2px solid #688eff;
+    border: 2px solid #30C2EC;
     width: 10vw;
     height: 3vh;
     border-radius: 5px;
 }
 
 .p-visit:hover{
-    background-color: #688eff;
+    background-color: #30C2EC;
     color: white;
     transition: color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
@@ -296,6 +296,10 @@ body{
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+}
+
+.s-head:hover{
+    font-size: 22px;
 }
 
 .s-sub-head{
@@ -360,6 +364,11 @@ body{
     border-radius: 10px;
 }
 
+.s-skill:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
 .s-img{
     height: 10vh;
     width: 10vw;
@@ -383,8 +392,102 @@ body{
     padding-left: 1vw;
 }
 
+
+
 /*contact*/
 
 .contact{
     height: 93vh;
+    background-image: url("./img/contact-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c-head{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.c-info-wrapper{
+    height: 30vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-info{
+    height: 10vh;
+    width: 60vw;
+    padding-top: 4vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.c-content{
+    height: 56vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.c-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56vh;
+    width: 50vw;
+}
+
+.inp_area{
+    height: 35vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type=text], select, textarea{
+    width: 80%;
+    padding: 2vh 2vw;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+textarea{
+    height: 30vh;
+}
+
+.c-right{
+    height: 56vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.c-btn{
+    border: none;
+    background-color: #ffffff;
+    border: 2px solid #30C2EC;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 2vh;
+}
+
+.c-btn:hover{
+    background-color: #30C2EC;
+    color: #ffffff;
+    transition: background-color 0.2s ease-in-out;
 }
