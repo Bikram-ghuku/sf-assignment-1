@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: sticky;
+}
+
+.nav-items{
+    display: flex;
+    background-color: red;
+    width: 40vw;
+    height: 5vh;
+}
+
+.nav-item{
+    padding-left: 5vw;
+    padding-top: 2vh;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;
+}
