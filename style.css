@@ -81,6 +81,9 @@ body{
     height: 93vh;
 }
 
+.ham{
+    display: none;
+}
 
 /* MAIN */
 
@@ -547,6 +550,10 @@ textarea{
         height: 5vh;
     }
 
+    .p-sub-head{
+        display: none;
+    }
+
     /* SKILLS */
 
     .s-desc{
@@ -611,5 +618,73 @@ textarea{
     .c-btn{
         width: 50vw;
         height: 5vh;
+    }
+
+    /*navbar*/
+
+    .navbar{
+        background-color: #ffffff;
+        height: 5vh;
+    }
+    .nav-items{
+        display: none;
+    }
+
+    .logo{
+        width: 100vw;
+        height: 4vh;
+    }
+
+    .logo img{
+        width: 10vw;
+        height: 4vh;
+    }
+    
+    .ham{
+        display: block;
+        font-size: 40px;
+        padding-right: 10vw;
+    }
+
+    .ham-img{
+        display: block;
+    }
+
+    .ham-close{
+        display: none;
+        z-index: 3;
+        position: fixed;
+        top: 1vh;
+        right: 10vw;
+    }
+
+    #ham-check{
+        position: fixed;
+        top: 2vw;
+        right: 2vw;
+        z-index: 2;
+    }
+
+    .navbar:has(.ham input[type="checkbox"]:checked) .ham .ham-close{
+        display: block;
+    }
+
+    .navbar:has(.ham input[type="checkbox"]:checked) .ham .ham-img{
+        display: none;
+    }
+
+    .navbar:has(.ham input[type="checkbox"]:checked) .nav-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 30vh;
+        border: #1A43bf 2px solid;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
     }
 }
